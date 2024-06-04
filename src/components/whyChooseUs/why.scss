@@ -1,0 +1,119 @@
+@import url("../../index.scss");
+
+.why-choose-us {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1 {
+    font-size: 45px;
+
+    span:nth-child(1) {
+      font-size: 55px;
+    }
+  }
+
+  .timeline {
+    padding: 1rem 2rem;
+    min-height: 90vh;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      background-color: var(--primary-color);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+    }
+
+    div {
+      font-size: 22px;
+    }
+    div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 18%;
+      top: 2;
+
+      &::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--secondary-thick-color);
+        position: absolute;
+        right: -28.3rem;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 18%;
+      top: 25%;
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--secondary-thick-color);
+        position: absolute;
+        left: -23.4rem;
+      }
+    }
+    div:nth-child(3) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 18%;
+      top: 50%;
+
+      &::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--secondary-thick-color);
+        position: absolute;
+        right: -20.1rem;
+      }
+    }
+    div:nth-child(4) {
+      display: flex;
+      align-items: center;
+
+      position: absolute;
+      right: 18%;
+      top: 80%;
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--secondary-thick-color);
+        position: absolute;
+        left: -11.3rem;
+      }
+    }
+  }
+
+  h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .van-div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

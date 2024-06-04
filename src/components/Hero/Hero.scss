@@ -1,0 +1,70 @@
+@import url('../../index.scss');
+
+
+.hero-container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: linear-gradient(to top right, #010101 30%,#ffbe00);
+
+
+    .hero-wrapper{
+        max-width: 84vw;
+        height: calc(100vh - 200px);
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-top: 4rem;
+
+
+        .text-hero{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            h1{
+                font-size: 43px;
+                color: var(--main-harmony);
+
+                span{
+                    color:var(--secondary-thick-color);
+                }
+            }
+
+            p{
+                width: 40vw;
+                color: var(--main-harmony);
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+
+            button{
+                width: 250px;
+                text-align: center;
+                padding: 1.8rem 6rem;
+                border: none;
+                cursor: pointer;
+                color: var(--main-harmony);
+                font-size: 1.8rem;
+                background-color: var(--secondary-thick-color);
+                border-radius: 1rem;
+                margin-top: 4.5rem;
+
+                &:hover{
+                    background-color: #ffbe00;
+                }
+            }
+        }
+
+        .image-hero{
+
+            position: relative;
+            z-index: 0;
+
+            img{
+                z-index: -1;
+            }
+        }
+    }
+}
