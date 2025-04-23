@@ -1,10 +1,11 @@
-import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootLayout from './components/RootLayout/RootLayout'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Contact from './pages/contact/Contact'
 import Gallery from './pages/Gallery/Gallery'
+
+import Service from './pages/Services/Service'
 
 
 const router = createBrowserRouter([{
@@ -22,6 +23,10 @@ const router = createBrowserRouter([{
     {
       path: '/Contact',
       element:<Contact/>
+    },
+    {
+      path: '/services',
+      element:<Service/>
     },
     {
       path: '/gallery',

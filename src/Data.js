@@ -8,7 +8,7 @@ const navLink = [
         name:'About'
     },
     {
-        href: '#services',
+        href: '/services',
         name:'Services'
     },
     {
